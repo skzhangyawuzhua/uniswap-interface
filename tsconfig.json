@@ -23,7 +23,16 @@
     "downlevelIteration": true,
     "allowSyntheticDefaultImports": true,
     "types": ["react-spring", "jest"],
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "plugins": [
+      {
+          "transform": "typescript-plugin-styled-components",
+          "type": "config",
+          // other typescript-plugin-styled-components options can be added here
+          "minify": true,
+          "ssr": true
+      }
+    ]
   },
   "exclude": ["node_modules", "cypress"],
   "include": ["./src/**/*.ts", "./src/**/*.tsx", "src/components/Confetti/index.js"]

@@ -32,13 +32,13 @@ repository.
 ### Install Dependencies
 
 ```bash
-yarn
+npm install
 ```
 
 ### Run
 
 ```bash
-yarn start
+npm start
 ```
 
 ### Configuring the environment (optional)
